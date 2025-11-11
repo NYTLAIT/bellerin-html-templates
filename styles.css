@@ -2,10 +2,6 @@
     display: none !important;
 }
 
-.form-floating label {
-    font-size: 1rem;
-}
-
-.form-floating .form-control {
-    height: 1rem;
+.nav-pills .nav-link {
+    border-radius: 0 !important;
 }

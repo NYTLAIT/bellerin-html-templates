@@ -9,15 +9,15 @@
             rel="stylesheet" 
             integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
             crossorigin="anonymous">
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="../styles.css">
     </head>
     <body>
         <header>
             <!-- NAVBAR -->
-            <nav class="navbar sticky-top bg-body-tertiary py-0">
+            <nav class="navbar sticky-top bg-body-tertiary py-0 border-bottom">
                 <div class="container-fluid">
                     <!-- BRAND -->
-                    <a href="home.html" class="navbar-brand"><h1 class="my-0">Bellerin</h1></a>
+                    <a href="home.html" class="navbar-brand"><h1 class="my-0 text-primary">Bellerin</h1></a>
 
                     <!-- PROFILE DROPDOWN -->
                     <div class="dropdown nav-item">
@@ -28,7 +28,7 @@
                             data-bs-toggle="dropdown"
                             aria-expanded="false" aria-label="Toggle More Dropdown">
                             <!-- TODO: Gotta get the pfp working -->
-                            <img src="images/FernPFP.jpg" 
+                            <img src="../images/FernPFP.jpg" 
                                 alt="Profile Picture" class="rounded-circle" width="32" height="32">
                             <span class="d-none d-md-inline ms-2">Fern</span>
                         </button>
@@ -45,10 +45,102 @@
         </header>
 
         <main>
-            <div class="container">
+            <!-- MOBILE Tabs Content -->
+            <div class="d-lg-none tab-content pt-2">
+                <!-- MY Page -->
+                <div id="myPage" class="tab-pane fade show active" 
+                    role="tabpanel" aria-labelledby="myTab">
+                    <div class="container d-flex flex-column">
 
+                        <!-- Currently Watching -->
+                        <div id="Currently-Watching">
+                            <!-- Section Title -->
+                            <h2>Currently Watching</h2>
+                            
+                            <!-- Carousel -->
+                            <div id="watching-carousel" class="carousel slide">
+                                <div class="carousel-inner">
+                                    <!-- EXAMPLES -->
+                                    <div class="carousel-item active">
+                                        <div class="row">
+                                            <div class="col-xs-4">
+                                                <div class="container">
+                                                    <img src="/images/Chihayafuru.webp" alt="Chihayafuru Cover">
+
+                                                    <button class="btn btn-primary">Delete</button>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-4">
+                                                <div class="container">
+                                                    <img src="/images/Chihayafuru.webp" alt="Chihayafuru Cover">
+
+                                                    <button class="btn btn-primary">Delete</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item row">
+
+                                    </div>
+                                    <div class="carousel-item">
+                                        
+                                    </div>
+                                </div>
+                                <!-- Carousel: Control Buttons -->
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+
+                        </div>
+
+                        <!-- Watched -->
+                        <div id="Watched">
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SEARCH Page -->
+                <div id="searchPage" class="tab-pane fade" 
+                    role="tabpanel" aria-labelledby="searchTab">
+                    <div class="container d-flex flex-column">
+                        SEARCH
+                    </div>
+                </div>
             </div>
         </main>
+        
+        <footer class="fixed-bottom bg-body-tertiary border-top">
+            <!-- MOBILE Tabs Nav -->
+            <div class="d-lg-none">
+                <ul class="nav nav-pills nav-fill" role="tablist">
+                    <!-- MY Tab -->
+                    <li class="nav-item">
+                        <button id="myTab" class="nav-link active" 
+                            data-bs-toggle="tab" data-bs-target="#myPage"  
+                            type="button" role="tab" aria-controls="myPage"
+                            aria-selected="true" aria-labelledby="searchPage">
+                            MY
+                        </button>
+                    </li>
+                    <!-- SEARCH Tab -->
+                    <li class="nav-item">
+                        <button id="searchTab" class="nav-link" 
+                            data-bs-toggle="tab" data-bs-target="#searchPage"  
+                            type="button" role="tab" aria-controls="searchPage"
+                             aria-selected="false" aria-labelledby="searchPage">
+                            SEARCH
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </footer>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
             integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" 
