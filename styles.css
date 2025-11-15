@@ -5,3 +5,14 @@
 .nav-pills .nav-link {
     border-radius: 0 !important;
 }
+
+.img-container {
+    
+}
+
+.img-container > img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 1rem;
+}
