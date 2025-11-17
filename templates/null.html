@@ -1,0 +1,227 @@
+        <!-- ... -->
+        <h1 class="m-6 text-center">CHECKING</h1>
+        <!-- ... -->
+
+        <!-- MORE -->
+         <!-- Horizontal scroll wrapper -->
+        <div class="d-flex overflow-auto gap-3 p-3" style="scroll-snap-type: x mandatory;">
+            
+            <!-- CARD + EXPAND WRAPPER -->
+            <div class="d-flex flex-row gap-3 scroll-item" style="scroll-snap-align: start;">
+
+                <!-- WATCHING CARD -->
+                <div class="watching-card small border rounded p-2">
+                    <div class="img-container">
+                        <img src="/images/Chihayafuru.webp" alt="Chihayafuru Cover">
+                    </div>
+
+                    <div class="mt-2">
+                        <h6 class="mb-1">{{Title}}</h6>
+                        <p class="text-muted small mb-2">{{Year}} | {{Type}}</p>
+
+                        <div class="d-flex justify-content-between align-items-start mb-1">
+                            <p class="small mb-0">Watched: {{Watched}}/{{Total}}</p>
+                            <button class="btn btn-outline-primary btn-sm">+</button>
+                        </div>
+
+                        <div class="progress" style="height: 6px;">
+                            <div class="progress-bar" style="width: 66%;"></div>
+                        </div>
+
+                        <!-- Toggle expansion -->
+                        <button class="btn btn-link p-0 mt-2" data-bs-toggle="collapse" data-bs-target="#expand1">
+                            Edit Details →
+                        </button>
+                    </div>
+                </div>
+
+                <!-- EXPANDED PANEL -->
+                <div class="collapse card card-body" id="expand1" style="width: 260px;">
+                    <h6>Edit Watching Details</h6>
+
+                    <label class="form-label small mt-2">Watch by:</label>
+                    <input type="date" class="form-control form-control-sm">
+
+                    <label class="form-label small mt-3">Episodes per day:</label>
+                    <input type="number" class="form-control form-control-sm">
+
+                    <p class="text-muted small mt-3">{{Ep Length}} min per episode</p>
+
+                    <a href="/anime/chihayafuru" class="btn btn-secondary btn-sm mt-3">More Info</a>
+                </div>
+
+            </div>
+            
+        </div>
+
+
+        <div class="watching-card d-flex gap-2 p-2 border rounded">
+
+            <!-- Poster -->
+            <div class="img-container">
+                <img src="/images/Chihayafuru.webp" alt="Chihayafuru" class="img-fluid">
+            </div>
+
+            <!-- Right side -->
+            <div class="flex-grow-1 d-flex flex-column">
+
+                <!-- Title and meta -->
+                <h6 class="mb-0">{{Title}}</h6>
+                <p class="text-muted small mb-2">{{Year}} | {{Type}}</p>
+
+                <!-- Progress -->
+                <div class="mb-2">
+                    <div class="d-flex justify-content-between align-items-center mb-1">
+                        <p class="mb-0 small">Watched: {{Watched}} / {{Total}}</p>
+
+                        <!-- Square + button -->
+                        <button class="btn btn-outline-primary btn-sm p-0 d-flex 
+                                    justify-content-center align-items-center"
+                                style="width: 28px; height: 28px; line-height: 1;">
+                            +
+                        </button>
+                    </div>
+
+                    <div class="progress" style="height: 6px;">
+                        <div class="progress-bar" style="width: 66%;"></div>
+                    </div>
+                </div>
+
+                <!-- Editable inputs -->
+                <div class="d-flex flex-column gap-1">
+
+                    <div class="d-flex justify-content-between">
+                        <label class="small text-muted mb-0">Watch by:</label>
+                        <input type="date" class="form-control form-control-sm" style="width: 55%;">
+                    </div>
+
+                    <div class="d-flex justify-content-between">
+                        <label class="small text-muted mb-0">Eps/day:</label>
+                        <input type="number" class="form-control form-control-sm" style="width: 55%;">
+                    </div>
+
+                    <p class="text-muted small mb-0">Avg ep: {{Ep Length}}</p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <!-- CARD VIEW -->
+        <div class="watching-card card shadow-sm p-3 mb-4">
+            <div class="card-body">
+
+                <div class="d-flex">
+                    <!-- Image (your styles) -->
+                    <div class="img-container me-3">
+                        <img src="/images/Chihayafuru.webp" alt="Chihayafuru Cover">
+                    </div>
+
+                    <div class="flex-grow-1">
+
+                        <div class="d-flex justify-content-between align-items-start">
+                            <div>
+                                <h5 class="mb-1">Chihayafuru</h5>
+
+                                <div class="mb-2">
+                                    <span class="badge bg-primary">Anime</span>
+                                    <span class="badge bg-secondary">Watching</span>
+                                </div>
+                            </div>
+
+                            <div class="text-end">
+                                <div class="text-muted small">ID: 001</div>
+                            </div>
+                        </div>
+
+                        <p class="text-muted mb-1">Episode 14 / 25</p>
+
+                        <div class="progress mb-2" style="height: 8px;">
+                            <div class="progress-bar" style="width: 56%;"></div>
+                        </div>
+
+                        <div class="mb-2">
+                            <div class="small"><strong>Goal:</strong> 2 episodes/day</div>
+                            <div class="text-muted small">Est. finish: Feb 10, 2025</div>
+                        </div>
+
+                        <div class="d-flex gap-2">
+                            <button class="btn btn-outline-primary btn-sm">Edit</button>
+                            <button class="btn btn-outline-danger btn-sm">Delete</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- CARD EDIT -->
+        <div class="watching-card card shadow-sm p-3 mb-4">
+            <div class="card-body">
+
+                <div class="d-flex">
+                    <!-- Image stays the same -->
+                    <div class="img-container me-3">
+                        <img src="/images/Chihayafuru.webp" alt="Chihayafuru Cover">
+                    </div>
+
+                    <div class="flex-grow-1">
+
+                        <h5 class="mb-3">Edit Watching Plan</h5>
+
+                        <form class="row g-3">
+
+                            <div class="col-6 col-md-4">
+                                <label class="form-label form-label-sm">Episodes Watched</label>
+                                <input type="number" class="form-control form-control-sm" value="14">
+                            </div>
+
+                            <div class="col-6 col-md-4">
+                                <label class="form-label form-label-sm">Total Episodes</label>
+                                <input type="number" class="form-control form-control-sm" value="25">
+                            </div>
+
+                            <div class="col-12 col-md-4">
+                                <label class="form-label form-label-sm">Status</label>
+                                <select class="form-select form-select-sm">
+                                    <option selected>Watching</option>
+                                    <option>Paused</option>
+                                    <option>Completed</option>
+                                    <option>Dropped</option>
+                                </select>
+                            </div>
+
+                            <div class="col-12 col-md-6">
+                                <label class="form-label form-label-sm">Goal Type</label>
+                                <select class="form-select form-select-sm">
+                                    <option selected>Episodes per day</option>
+                                    <option>Finish by (date)</option>
+                                    <option>No goal</option>
+                                </select>
+                            </div>
+
+                            <div class="col-12 col-md-6">
+                                <label class="form-label form-label-sm">Goal Value</label>
+                                <input type="text" class="form-control form-control-sm" placeholder="2">
+                            </div>
+
+                            <div class="col-12">
+                                <div class="d-flex gap-2">
+                                    <button class="btn btn-primary btn-sm">Save</button>
+                                    <button class="btn btn-secondary btn-sm">Cancel</button>
+
+                                    <div class="ms-auto d-flex gap-1">
+                                        <button class="btn btn-outline-secondary btn-sm">-1</button>
+                                        <button class="btn btn-outline-secondary btn-sm">+1</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
