@@ -115,7 +115,7 @@
         </div>
 
         <!-- CARD EXPANSION -->
-        <div id="watching-expansion" class="d-flex gap-2 collapse show">
+        <div id="watching-expansion" class="d-flex flex-stretch gap-2 collapse show">
             <!-- LEFT -->
             <div>
                 <div class="img-container">
@@ -127,12 +127,39 @@
             <div class="d-flex flex-column">
                 <h6 class="mb-0">{{Title}}</h6>
                 <p class="text-muted small mb-2">{{Year}} | {{Type}}</p>
+
+                <!-- PROGRESS -->
                 <div class="progress my-1" style="height: 8px;"
                     role="progressbar" aria-label="Watched Percentage" 
                     aria-valuenow="66" aria-valuemin="0" aria-valuemax="100">
                     <div class="progress-bar" style="width: 66%"></div>
                 </div>
+                <div class="d-flex justify-content-between">
+                    <p>{{n}}/{{n}} Ep</p>
+                    <div>
+                        <button class="btn btn-outline-primary btn-sm">+ 1 ep</button>
+                        <button class="btn btn-outline-primary btn-sm">- 1 ep</button>
+                    </div>
+                </div>
 
+                <!-- EDITABLE INPUTS -->
+                <div class="mb-2">
+                    <p>Min per ep: | Daily time: </p>
+                    <div class="d-flex justify-content-between">
+                        <label for="watching-date">Watch by:</label>
+                        <input id="watching-date" class=" form-control form-control-sm" type="date">
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <label for="watching-dailyep">Ep per day:</label>
+                        <input id="watching-dailyep" class=" form-control form-control-sm" type="number">
+                    </div>
+                </div>
+
+                <!-- MORE INFO BUTTON -->
+                <a href="info.html" class="text-center">
+                    <button class="btn btn-primary text-center btn-sm">MORE</button>
+                </a>
+                
             </div>
         </div>
 
