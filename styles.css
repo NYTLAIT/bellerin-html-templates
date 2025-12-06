@@ -31,4 +31,10 @@
     width: 66vw;
 }
 
+.sypnosis-container {
+    max-height: 4rem;
+    overflow: hidden;
+    /* work on this */
+    text-overflow: ellipsis;
+}
 /* 1. flex-basis (flex item size based on set width or height and if not its content */
