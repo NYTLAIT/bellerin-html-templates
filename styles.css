@@ -10,7 +10,7 @@
     flex-shrink: 0;
     flex-grow: 0;
     height: auto;
-    width: 111px /* shorthand: flex-grow, flew-shrink, flex-basis^1 */
+    width: 111px 
 }
 
 .img-container {
@@ -37,4 +37,6 @@
     /* work on this */
     text-overflow: ellipsis;
 }
-/* 1. flex-basis (flex item size based on set width or height and if not its content */
+
+/* shorthand flex: flex-grow, flew-shrink, flex-basis*/
+    /* flex-basis (flex item size based on set width or height and if not its content */
