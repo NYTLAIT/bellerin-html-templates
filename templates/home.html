@@ -8,6 +8,7 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="../styles.css">
 </head>
 
@@ -162,8 +163,8 @@
                         </div>
 
                         <!-- CARD EXPANSION -->
-                        <div id="watching-expansion" class="my-2">
-                            <div class="d-flex flex-stretch gap-2 collapse">
+                        <div id="watching-expansion" class="my-2 collapse">
+                            <div class="d-flex flex-stretch gap-2">
                                 <!-- LEFT -->
                                 <div class="col-6">
                                     <div class="img-container">
@@ -214,117 +215,248 @@
                             <button class="btn bg-body-tertiary p-0 mb-4 w-100 btn-sm" data-bs-toggle="collapse"
                                 data-bs-target="#watching-expansion">^</button>
                         </div>
+                    </div>
+                    <!-- Watched -->
+                    <div id="Watched" class="my-2">
+                        <h2>Watched</h2>
+                        <div class="container">
 
-                        <!-- Watched -->
-                        <div id="Watched" class="my-2">
-                            <h2>Watched</h2>
-                            <div class="container">
-                                <!-- THUMBNAIL 1 -->
-                                <div class="row gap-0">
-                                    <div class="col-3 px-0">
-                                        <div class="img-container">
-                                            <img src="/images/Chihayafuru.webp" alt="Chihayafuru Cover">
-                                        </div>
-                                    </div>
-                                    <div class="small col-auto pe-0 d-flex flex-column justify-content-between">
-                                        <p class="my-0 fw-bold">{{Title}}</p>
-                                        <p class="my-0">{{Type}} • Ep: {{n}} • Runtime: {{len}}</p>
-                                        <p class="my-0">{{Year}} • {{Genre}}</p>
-                                        <p class="my-0">Started: dd/mm/yy • Finished: dd/mm/yy</p>
-                                        <div class="d-flex justify-content-between">
-                                            <div>
-                                                <p class="my-0">Rating: {{n}}/10</p>
-                                                <p class="my-0">Watched Counter: {{n}}</p>
-                                            </div>
-                                            <button class="btn btn-sm btn-outline-primary">Rewatch</button>
-                                        </div>
+                            <!-- THUMBNAIL 1 -->
+                            <div class="row gap-0">
+                                <div class="col-3 px-0">
+                                    <div class="img-container">
+                                        <img src="/images/Chihayafuru.webp" alt="Chihayafuru Cover">
                                     </div>
                                 </div>
-                                <hr>
-
-                                <!-- THUMBNAIL 2 -->
-                                <div class="row gap-0">
-                                    <div class="col-3 px-0">
-                                        <div class="img-container">
-                                            <img src="/images/Chihayafuru.webp" alt="Chihayafuru Cover">
+                                <div class="small col-auto pe-0 d-flex flex-column justify-content-between">
+                                    <p class="my-0 fw-bold">{{Title}}</p>
+                                    <p class="my-0">{{Type}} • Ep: {{n}} • Runtime: {{len}}</p>
+                                    <p class="my-0">{{Year}} • {{Genre}}</p>
+                                    <p class="my-0">Started: dd/mm/yy • Finished: dd/mm/yy</p>
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <p class="my-0">Rating: {{n}}/10</p>
+                                            <p class="my-0">Watched Counter: {{n}}</p>
                                         </div>
-                                    </div>
-                                    <div class="small col-auto pe-0 d-flex flex-column justify-content-between">
-                                        <p class="my-0 fw-bold">{{Title}}</p>
-                                        <p class="my-0">{{Type}} • Ep: {{n}} • Runtime: {{len}}</p>
-                                        <p class="my-0">{{Year}} • {{Genre}}</p>
-                                        <p class="my-0">Started: dd/mm/yy • Finished: dd/mm/yy</p>
-                                        <div class="d-flex justify-content-between">
-                                            <div>
-                                                <p class="my-0">Rating: {{n}}/10</p>
-                                                <p class="my-0">Watched Counter: {{n}}</p>
-                                            </div>
-                                            <button class="btn btn-sm btn-outline-primary">Rewatch</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <hr>
-
-                                <!-- THUMBNAIL 3 -->
-                                <div class="row gap-0">
-                                    <div class="col-3 px-0">
-                                        <div class="img-container">
-                                            <img src="/images/Chihayafuru.webp" alt="Chihayafuru Cover">
-                                        </div>
-                                    </div>
-                                    <div class="small col-auto pe-0 d-flex flex-column justify-content-between">
-                                        <p class="my-0 fw-bold">{{Title}}</p>
-                                        <p class="my-0">{{Type}} • Ep: {{n}} • Runtime: {{len}}</p>
-                                        <p class="my-0">{{Year}} • {{Genre}}</p>
-                                        <p class="my-0">Started: dd/mm/yy • Finished: dd/mm/yy</p>
-                                        <div class="d-flex justify-content-between">
-                                            <div>
-                                                <p class="my-0">Rating: {{n}}/10</p>
-                                                <p class="my-0">Watched Counter: {{n}}</p>
-                                            </div>
-                                            <button class="btn btn-sm btn-outline-primary">Rewatch</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <hr>
-
-                                <!-- THUMBNAIL 4 -->
-                                <div class="row gap-0">
-                                    <div class="col-3 px-0">
-                                        <div class="img-container">
-                                            <img src="/images/Chihayafuru.webp" alt="Chihayafuru Cover">
-                                        </div>
-                                    </div>
-                                    <div class="small col-auto pe-0 d-flex flex-column justify-content-between">
-                                        <p class="my-0 fw-bold">{{Title}}</p>
-                                        <p class="my-0">{{Type}} • Ep: {{n}} • Runtime: {{len}}</p>
-                                        <p class="my-0">{{Year}} • {{Genre}}</p>
-                                        <p class="my-0">Started: dd/mm/yy • Finished: dd/mm/yy</p>
-                                        <div class="d-flex justify-content-between">
-                                            <div>
-                                                <p class="my-0">Rating: {{n}}/10</p>
-                                                <p class="my-0">Watched Counter: {{n}}</p>
-                                            </div>
-                                            <button class="btn btn-sm btn-outline-primary">Rewatch</button>
-                                        </div>
+                                        <button class="btn btn-sm btn-outline-primary">Rewatch</button>
                                     </div>
                                 </div>
                             </div>
+                            <hr>
 
+                            <!-- THUMBNAIL 2 -->
+                            <div class="row gap-0">
+                                <div class="col-3 px-0">
+                                    <div class="img-container">
+                                        <img src="/images/Chihayafuru.webp" alt="Chihayafuru Cover">
+                                    </div>
+                                </div>
+                                <div class="small col-auto pe-0 d-flex flex-column justify-content-between">
+                                    <p class="my-0 fw-bold">{{Title}}</p>
+                                    <p class="my-0">{{Type}} • Ep: {{n}} • Runtime: {{len}}</p>
+                                    <p class="my-0">{{Year}} • {{Genre}}</p>
+                                    <p class="my-0">Started: dd/mm/yy • Finished: dd/mm/yy</p>
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <p class="my-0">Rating: {{n}}/10</p>
+                                            <p class="my-0">Watched Counter: {{n}}</p>
+                                        </div>
+                                        <button class="btn btn-sm btn-outline-primary">Rewatch</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+
+                            <!-- THUMBNAIL 3 -->
+                            <div class="row gap-0">
+                                <div class="col-3 px-0">
+                                    <div class="img-container">
+                                        <img src="/images/Chihayafuru.webp" alt="Chihayafuru Cover">
+                                    </div>
+                                </div>
+                                <div class="small col-auto pe-0 d-flex flex-column justify-content-between">
+                                    <p class="my-0 fw-bold">{{Title}}</p>
+                                    <p class="my-0">{{Type}} • Ep: {{n}} • Runtime: {{len}}</p>
+                                    <p class="my-0">{{Year}} • {{Genre}}</p>
+                                    <p class="my-0">Started: dd/mm/yy • Finished: dd/mm/yy</p>
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <p class="my-0">Rating: {{n}}/10</p>
+                                            <p class="my-0">Watched Counter: {{n}}</p>
+                                        </div>
+                                        <button class="btn btn-sm btn-outline-primary">Rewatch</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+
+                            <!-- THUMBNAIL 4 -->
+                            <div class="row gap-0">
+                                <div class="col-3 px-0">
+                                    <div class="img-container">
+                                        <img src="/images/Chihayafuru.webp" alt="Chihayafuru Cover">
+                                    </div>
+                                </div>
+                                <div class="small col-auto pe-0 d-flex flex-column justify-content-between">
+                                    <p class="my-0 fw-bold">{{Title}}</p>
+                                    <p class="my-0">{{Type}} • Ep: {{n}} • Runtime: {{len}}</p>
+                                    <p class="my-0">{{Year}} • {{Genre}}</p>
+                                    <p class="my-0">Started: dd/mm/yy • Finished: dd/mm/yy</p>
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <p class="my-0">Rating: {{n}}/10</p>
+                                            <p class="my-0">Watched Counter: {{n}}</p>
+                                        </div>
+                                        <button class="btn btn-sm btn-outline-primary">Rewatch</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+
                     </div>
                 </div>
 
                 <br>
                 <br>
 
-                <!-- SEARCH Page -->
-                <div id="searchPage" class="tab-pane fade" role="tabpanel" aria-labelledby="searchTab">
-                    <div class="container d-flex flex-column">
-
-                    </div>
-                </div>
             </div>
+
+            <!-- SEARCH Page -->
+            <div id="searchPage" class="tab-pane fade show" role="tabpanel" aria-labelledby="searchTab">
+                <div class="container d-flex flex-column">
+                    <h2>Search</h2>
+                    <!-- Search Bar -->
+                    <form>
+                        <div class="d-flex gap-1">
+                            <input class="form-control" type="text" id="query">
+                            <button class="btn btn-primary" type="button" value="submit"><i
+                                    class="bi bi-search"></i></button>
+                        </div>
+                    </form>
+
+                    <!-- Collapse Bar thingy -->
+                    <div class="collapse show my-2" id="query-confirm">
+                        <div class="d-flex flex-stretch gap-2">
+                            <!-- LEFT -->
+                            <div class="col-6">
+                                <div class="img-container">
+                                    <img src="/images/Chihayafuru.webp" alt="Chihayafuru Cover">
+                                </div>
+                            </div>
+
+                            <!-- RIGHT -->
+                            <div class="d-flex flex-column col-6">
+                                <h6 class="mb-0 mt-2">{{Title}}</h6>
+                                <p class="text-muted small mb-2">{{Year}} | {{Type}}</p>
+
+                                <form id="query-confirm-form" class="my-2">
+                                    <!-- GOAL TYPE -->
+                                    <div class="d-flex justify-content-between">
+                                            <label for="watching-date">By:</label>
+                                            <input class="form-control" id="watching-date" type="date">
+                                        </div>
+                                        <div>
+                                            <label for="watching-dailyep">Daily Ep:</label>
+                                            <input class="form-control " id="watching-dailyep" type="number">
+                                        </div>
+
+                                    <button id="query-confirm-btn" class="btn btn-primary">Start Watching</button>
+                                </form>
+
+                                <button class="btn btn-outline-primary">More Info</button>
+                            </div>
+                        </div>
+                        <!-- COLLAPSE AGAIN -->
+                            <button class="btn bg-body-tertiary p-0 mb-4 w-100 btn-sm" data-bs-toggle="collapse"
+                                data-bs-target="#query-confirm">^</button>
+                    </div>
+
+                    <!-- Suggested Items -->
+                    <div class="my-2">
+                        <!-- ITEM 1 -->
+                        <a data-bs-toggle="collapse" href="#query-confirm">
+                            <div class="row gap-0">
+                                <div class="col-3 px-0">
+                                    <div class="img-container">
+                                        <img src="/images/Chihayafuru.webp" alt="Chihayafuru Cover">
+                                    </div>
+                                </div>
+                                <div class="col-auto pe-0 d-flex flex-column">
+                                    <p class="my-0 fw-bold">{{Title}}</p>
+                                    <p class="my-0 small">year • type</p>
+                                    <p class="small">Eps: • Runtime:</p>
+                                    <button class="btn btn-primary btn-sm mb-1 small">Start Watching</button>
+                                    <button class="btn btn-outline-primary btn-sm small">More</button>
+                                </div>
+                            </div>
+                        </a>
+                        <hr>
+
+                        <!-- ITEM 2 -->
+                        <a data-bs-toggle="collapse" href="#query-confirm">
+                            <div class="row gap-0">
+                                <div class="col-3 px-0">
+                                    <div class="img-container">
+                                        <img src="/images/Chihayafuru.webp" alt="Chihayafuru Cover">
+                                    </div>
+                                </div>
+                                <div class="col-auto pe-0 d-flex flex-column">
+                                    <p class="my-0 fw-bold">{{Title}}</p>
+                                    <p class="my-0 small">year • type</p>
+                                    <p class="small">Eps: • Runtime:</p>
+                                    <button class="btn btn-primary btn-sm mb-1 small">Start Watching</button>
+                                    <button class="btn btn-outline-primary btn-sm small">More</button>
+                                </div>
+                            </div>
+                        </a>
+                        <hr>
+
+                        <!-- ITEM 3 -->
+                        <a data-bs-toggle="collapse" href="#query-confirm">
+                            <div class="row gap-0">
+                                <div class="col-3 px-0">
+                                    <div class="img-container">
+                                        <img src="/images/Chihayafuru.webp" alt="Chihayafuru Cover">
+                                    </div>
+                                </div>
+                                <div class="col-auto pe-0 d-flex flex-column">
+                                    <p class="my-0 fw-bold">{{Title}}</p>
+                                    <p class="my-0 small">year • type</p>
+                                    <p class="small">Eps: • Runtime:</p>
+                                    <button class="btn btn-primary btn-sm mb-1 small">Start Watching</button>
+                                    <button class="btn btn-outline-primary btn-sm small">More</button>
+                                </div>
+                            </div>
+                        </a>
+                        <hr>
+
+                        <!-- IITEM 4 -->
+                        <a data-bs-toggle="collapse" href="#query-confirm">
+                            <div class="row gap-0">
+                                <div class="col-3 px-0">
+                                    <div class="img-container">
+                                        <img src="/images/Chihayafuru.webp" alt="Chihayafuru Cover">
+                                    </div>
+                                </div>
+                                <div class="col-auto pe-0 d-flex flex-column">
+                                    <p class="my-0 fw-bold">{{Title}}</p>
+                                    <p class="my-0 small">year • type</p>
+                                    <p class="small">Eps: • Runtime:</p>
+                                    <button class="btn btn-primary btn-sm mb-1 small">Start Watching</button>
+                                    <button class="btn btn-outline-primary btn-sm small">More</button>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+
+                <hr>
+                <hr>
+
+            </div>
+        </div>
+
     </main>
 
     <footer class="fixed-bottom bg-body-tertiary border-top">
@@ -334,8 +466,7 @@
                 <!-- MY Tab -->
                 <li class="nav-item">
                     <button id="myTab" class="nav-link active" data-bs-toggle="tab" data-bs-target="#myPage"
-                        type="button" role="tab" aria-controls="myPage" aria-selected="true"
-                        aria-labelledby="searchPage">
+                        type="button" role="tab" aria-controls="myPage" aria-selected="true" aria-labelledby="My Page">
                         MY
                     </button>
                 </li>
@@ -343,7 +474,7 @@
                 <li class="nav-item">
                     <button id="searchTab" class="nav-link" data-bs-toggle="tab" data-bs-target="#searchPage"
                         type="button" role="tab" aria-controls="searchPage" aria-selected="false"
-                        aria-labelledby="searchPage">
+                        aria-labelledby="Search Page">
                         SEARCH
                     </button>
                 </li>
