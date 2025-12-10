@@ -1,15 +1,13 @@
-<!DOCTYPE HTML>
-<html>
-
-<head>
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bellerin Mock</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="../styles.css">
+    <link href="Bellerin%20Mock_files/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="Bellerin%20Mock_files/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="Bellerin%20Mock_files/styles.css">
 </head>
 
 <body>
@@ -18,7 +16,7 @@
         <nav class="navbar sticky-top bg-body-tertiary py-0 border-bottom">
             <div class="container-fluid">
                 <!-- BRAND -->
-                <a href="home.html" class="navbar-brand">
+                <a href="http://127.0.0.1:5500/templates/home.html" class="navbar-brand">
                     <h1 class="my-0 text-primary">Bellerin</h1>
                 </a>
 
@@ -26,18 +24,15 @@
                 <div class="dropdown nav-item">
 
                     <!-- "PFP-BUTTON" -->
-                    <button class="dropdown-toggle d-flex align-items-center" type="button"
-                        style="background: none; border: none;" data-bs-toggle="dropdown" aria-expanded="false"
-                        aria-label="Toggle More Dropdown">
+                    <button class="dropdown-toggle d-flex align-items-center" type="button" style="background: none; border: none;" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Toggle More Dropdown">
                         <!-- TODO: Gotta get the pfp working -->
-                        <img src="../images/FernPFP.jpg" alt="Profile Picture" class="rounded-circle" width="32"
-                            height="32">
+                        <img src="Bellerin%20Mock_files/FernPFP.jpg" alt="Profile Picture" class="rounded-circle" width="32" height="32">
                         <span class="d-none d-md-inline ms-2">Fern</span>
                     </button>
 
                     <!-- PFP-MENU -->
                     <ul class="dropdown-menu dropdown-menu-end" data-bs-theme="dark">
-                        <li><a href="account.html" class="dropdown-item">Manage Account</a></li>
+                        <li><a href="http://127.0.0.1:5500/templates/account.html" class="dropdown-item">Manage Account</a></li>
                         <li>
                             <hr class="dropdown-divider">
                         </li>
@@ -52,7 +47,7 @@
         <!-- MOBILE Tabs Content -->
         <div class="d-lg-none tab-content py-2">
             <!-- MY Page -->
-            <div id="myPage" class="tab-pane fade show active" role="tabpanel" aria-labelledby="myTab">
+            <div id="myPage" class="tab-pane fade" role="tabpanel" aria-labelledby="myTab">
                 <div class="container d-flex flex-column">
 
                     <!-- Currently Watching -->
@@ -68,16 +63,14 @@
                                 <a href="#watching-expansion" data-bs-toggle="collapse" class="text-decoration-none">
                                     <div class="watching-card small">
                                         <div class="img-container">
-                                            <img src="../images/Chihayafuru.webp" alt="Chihayafuru Cover">
+                                            <img src="Bellerin%20Mock_files/Chihayafuru.webp" alt="Chihayafuru Cover">
                                         </div>
                                         <div class="meta-container d-flex flex-column">
                                             <h6 class="my-1">{{Title}}</h6>
                                             <p class="my-0">By: {{date}}</p>
                                             <p class="my-0">Daily ep: {{num}}</p>
                                             <p class="my-0">On ep: {{n}}/{{n}}</p>
-                                            <div class="progress my-1" style="height: 8px;" role="progressbar"
-                                                aria-label="Watched Percentage" aria-valuenow="66" aria-valuemin="0"
-                                                aria-valuemax="100">
+                                            <div class="progress my-1" style="height: 8px;" role="progressbar" aria-label="Watched Percentage" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100">
                                                 <div class="progress-bar" style="width: 66%"></div>
                                             </div>
                                             <button class="btn btn-outline-primary py-0 btn-sm mb-1">+ 1 EP</button>
@@ -89,16 +82,14 @@
                                 <a href="#watching-expansion" data-bs-toggle="collapse" class="text-decoration-none">
                                     <div class="watching-card small">
                                         <div class="img-container">
-                                            <img src="../images/BluePeriod.webp" alt="Blue Period Cover">
+                                            <img src="Bellerin%20Mock_files/BluePeriod.webp" alt="Blue Period Cover">
                                         </div>
                                         <div class="meta-container d-flex flex-column">
                                             <h6 class="my-1">{{Title}}</h6>
                                             <p class="my-0">By: {{date}}</p>
                                             <p class="my-0">Daily ep: {{num}}</p>
                                             <p class="my-0">On ep: {{n}}/{{n}}</p>
-                                            <div class="progress my-1" style="height: 8px;" role="progressbar"
-                                                aria-label="Watched Percentage" aria-valuenow="66" aria-valuemin="0"
-                                                aria-valuemax="100">
+                                            <div class="progress my-1" style="height: 8px;" role="progressbar" aria-label="Watched Percentage" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100">
                                                 <div class="progress-bar" style="width: 66%"></div>
                                             </div>
                                             <button class="btn btn-outline-primary py-0 btn-sm mb-1">+ 1 EP</button>
@@ -110,16 +101,14 @@
                                 <a href="#watching-expansion" data-bs-toggle="collapse" class="text-decoration-none">
                                     <div class="watching-card small">
                                         <div class="img-container">
-                                            <img src="../images/PerfectBlue.jpg" alt="Perfect Blue Cover">
+                                            <img src="Bellerin%20Mock_files/PerfectBlue.jpg" alt="Perfect Blue Cover">
                                         </div>
                                         <div class="meta-container d-flex flex-column">
                                             <h6 class="my-1">{{Title}}</h6>
                                             <p class="my-0">By: {{date}}</p>
                                             <p class="my-0">Daily ep: {{num}}</p>
                                             <p class="my-0">On ep: {{n}}/{{n}}</p>
-                                            <div class="progress my-1" style="height: 8px;" role="progressbar"
-                                                aria-label="Watched Percentage" aria-valuenow="66" aria-valuemin="0"
-                                                aria-valuemax="100">
+                                            <div class="progress my-1" style="height: 8px;" role="progressbar" aria-label="Watched Percentage" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100">
                                                 <div class="progress-bar" style="width: 66%"></div>
                                             </div>
                                             <button class="btn btn-outline-primary py-0 btn-sm mb-1">+ 1 EP</button>
@@ -131,16 +120,14 @@
                                 <a href="#watching-expansion" data-bs-toggle="collapse" class="text-decoration-none">
                                     <div class="watching-card small">
                                         <div class="img-container">
-                                            <img src="../images/Arrietty.jpg" alt="Arrietty Cover">
+                                            <img src="Bellerin%20Mock_files/Arrietty.jpg" alt="Arrietty Cover">
                                         </div>
                                         <div class="meta-container d-flex flex-column">
                                             <h6 class="my-1">{{Title}}</h6>
                                             <p class="my-0">By: {{date}}</p>
                                             <p class="my-0">Daily ep: {{num}}</p>
                                             <p class="my-0">On ep: {{n}}/{{n}}</p>
-                                            <div class="progress my-1" style="height: 8px;" role="progressbar"
-                                                aria-label="Watched Percentage" aria-valuenow="66" aria-valuemin="0"
-                                                aria-valuemax="100">
+                                            <div class="progress my-1" style="height: 8px;" role="progressbar" aria-label="Watched Percentage" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100">
                                                 <div class="progress-bar" style="width: 66%"></div>
                                             </div>
                                             <button class="btn btn-outline-primary py-0 btn-sm mb-1">+ 1 EP</button>
@@ -152,16 +139,14 @@
                                 <a href="#watching-expansion" data-bs-toggle="collapse" class="text-decoration-none">
                                     <div class="watching-card small">
                                         <div class="img-container">
-                                            <img src="../images/Chihayafuru.webp" alt="Chihayafuru Cover">
+                                            <img src="Bellerin%20Mock_files/Chihayafuru.webp" alt="Chihayafuru Cover">
                                         </div>
                                         <div class="meta-container d-flex flex-column">
                                             <h6 class="my-1">{{Title}}</h6>
                                             <p class="my-0">By: {{date}}</p>
                                             <p class="my-0">Daily ep: {{num}}</p>
                                             <p class="my-0">On ep: {{n}}/{{n}}</p>
-                                            <div class="progress my-1" style="height: 8px;" role="progressbar"
-                                                aria-label="Watched Percentage" aria-valuenow="66" aria-valuemin="0"
-                                                aria-valuemax="100">
+                                            <div class="progress my-1" style="height: 8px;" role="progressbar" aria-label="Watched Percentage" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100">
                                                 <div class="progress-bar" style="width: 66%"></div>
                                             </div>
                                             <button class="btn btn-outline-primary py-0 btn-sm mb-1">+ 1 EP</button>
@@ -177,7 +162,7 @@
                                 <!-- LEFT -->
                                 <div class="col-6">
                                     <div class="img-container">
-                                        <img src="../images/Chihayafuru.webp" alt="Chihayafuru Cover">
+                                        <img src="Bellerin%20Mock_files/Chihayafuru.webp" alt="Chihayafuru Cover">
                                     </div>
                                 </div>
 
@@ -187,9 +172,7 @@
                                     <p class="text-muted small mb-2">{{Year}} | {{Type}}</p>
 
                                     <!-- PROGRESS -->
-                                    <div class="progress mb-2" style="height: 8px;" role="progressbar"
-                                        aria-label="Watched Percentage" aria-valuenow="66" aria-valuemin="0"
-                                        aria-valuemax="100">
+                                    <div class="progress mb-2" style="height: 8px;" role="progressbar" aria-label="Watched Percentage" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100">
                                         <div class="progress-bar" style="width: 66%"></div>
                                     </div>
                                     <div class="d-flex justify-content-between">
@@ -215,14 +198,13 @@
                                     </div>
 
                                     <!-- MORE INFO BUTTON -->
-                                    <a href="info.html" class="text-center mb-2">
+                                    <a href="http://127.0.0.1:5500/templates/info.html" class="text-center mb-2">
                                         <button class="btn btn-primary text-center btn-sm">MORE</button>
                                     </a>
                                 </div>
                             </div>
                             <!-- COLLAPSE AGAIN -->
-                            <button class="btn bg-body-tertiary p-0 mb-4 w-100 btn-sm" data-bs-toggle="collapse"
-                                data-bs-target="#watching-expansion">^</button>
+                            <button class="btn bg-body-tertiary p-0 mb-4 w-100 btn-sm" data-bs-toggle="collapse" data-bs-target="#watching-expansion">^</button>
                         </div>
                     </div>
                     <!-- Watched -->
@@ -231,11 +213,11 @@
                         <div class="container">
 
                             <!-- THUMBNAIL 1 -->
-                            <a href="info.html" class="text-decoration-none">
+                            <a href="http://127.0.0.1:5500/templates/info.html" class="text-decoration-none">
                                 <div class="row gap-0">
                                     <div class="col-3 px-0">
                                         <div class="img-container">
-                                            <img src="../images/Chihayafuru.webp" alt="Chihayafuru Cover">
+                                            <img src="Bellerin%20Mock_files/Chihayafuru.webp" alt="Chihayafuru Cover">
                                         </div>
                                     </div>
                                     <div class="small col-auto pe-0 d-flex flex-column justify-content-between">
@@ -257,11 +239,11 @@
                             <hr>
 
                             <!-- THUMBNAIL 2 -->
-                            <a href="info.html" class="text-decoration-none">
+                            <a href="http://127.0.0.1:5500/templates/info.html" class="text-decoration-none">
                                 <div class="row gap-0">
                                     <div class="col-3 px-0">
                                         <div class="img-container">
-                                            <img src="../images/Chihayafuru.webp" alt="Chihayafuru Cover">
+                                            <img src="Bellerin%20Mock_files/Chihayafuru.webp" alt="Chihayafuru Cover">
                                         </div>
                                     </div>
                                     <div class="small col-auto pe-0 d-flex flex-column justify-content-between">
@@ -283,11 +265,11 @@
                             <hr>
 
                             <!-- THUMBNAIL 3 -->
-                            <a href="info.html" class="text-decoration-none">
+                            <a href="http://127.0.0.1:5500/templates/info.html" class="text-decoration-none">
                                 <div class="row gap-0">
                                     <div class="col-3 px-0">
                                         <div class="img-container">
-                                            <img src="../images/Chihayafuru.webp" alt="Chihayafuru Cover">
+                                            <img src="Bellerin%20Mock_files/Chihayafuru.webp" alt="Chihayafuru Cover">
                                         </div>
                                     </div>
                                     <div class="small col-auto pe-0 d-flex flex-column justify-content-between">
@@ -309,11 +291,11 @@
                             <hr>
 
                             <!-- THUMBNAIL 4 -->
-                            <a href="info.html" class="text-decoration-none">
+                            <a href="http://127.0.0.1:5500/templates/info.html" class="text-decoration-none">
                                 <div class="row gap-0">
                                     <div class="col-3 px-0">
                                         <div class="img-container">
-                                            <img src="../images/Chihayafuru.webp" alt="Chihayafuru Cover">
+                                            <img src="Bellerin%20Mock_files/Chihayafuru.webp" alt="Chihayafuru Cover">
                                         </div>
                                     </div>
                                     <div class="small col-auto pe-0 d-flex flex-column justify-content-between">
@@ -343,25 +325,24 @@
             </div>
 
             <!-- SEARCH Page -->
-            <div id="searchPage" class="tab-pane fade show" role="tabpanel" aria-labelledby="searchTab">
+            <div id="searchPage" class="tab-pane fade show active" role="tabpanel" aria-labelledby="searchTab">
                 <div class="container d-flex flex-column">
                     <h2>Search</h2>
                     <!-- Search Bar -->
                     <form>
                         <div class="d-flex gap-1">
                             <input class="form-control" type="text" id="query">
-                            <button class="btn btn-primary" type="button" value="submit"><i
-                                    class="bi bi-search"></i></button>
+                            <button class="btn btn-primary" type="button" value="submit"><i class="bi bi-search"></i></button>
                         </div>
                     </form>
 
                     <!-- Collapse Bar thingy -->
-                    <div class="collapse show my-2" id="query-confirm">
+                    <div class="my-2 collapse" id="query-confirm" style="">
                         <div class="d-flex flex-stretch gap-2">
                             <!-- LEFT -->
                             <div class="col-6">
                                 <div class="img-container">
-                                    <img src="../images/Chihayafuru.webp" alt="Chihayafuru Cover">
+                                    <img src="Bellerin%20Mock_files/Chihayafuru.webp" alt="Chihayafuru Cover">
                                 </div>
                             </div>
 
@@ -384,90 +365,89 @@
                                     <button id="query-confirm-btn" class="btn btn-primary">Start Watching</button>
                                 </form>
 
-                                <a class="btn btn-outline-primary" href="info.html">More Info</a>
+                                <a class="btn btn-outline-primary" href="http://127.0.0.1:5500/templates/info.html">More Info</a>
                             </div>
                         </div>
                         <!-- COLLAPSE AGAIN -->
-                        <button class="btn bg-body-tertiary p-0 mb-4 w-100 btn-sm" data-bs-toggle="collapse"
-                            data-bs-target="#query-confirm">^</button>
+                        <button class="btn bg-body-tertiary p-0 mb-4 w-100 btn-sm collapsed" data-bs-toggle="collapse" data-bs-target="#query-confirm" aria-expanded="false">^</button>
                     </div>
 
                     <!-- Suggested Items -->
                     <div class="my-2">
                         <!-- ITEM 1 -->
-                        <a data-bs-toggle="collapse" href="#query-confirm">
-                            <div class="row gap-0">
+                        <a data-bs-toggle="collapse" href="#query-confirm" aria-expanded="false" class="collapsed">
+                            </a><div class="row gap-0"><a data-bs-toggle="collapse" href="#query-confirm" aria-expanded="false" class="collapsed">
                                 <div class="col-3 px-0">
                                     <div class="img-container">
-                                        <img src="../images/Chihayafuru.webp" alt="Chihayafuru Cover">
+                                        <img src="Bellerin%20Mock_files/Chihayafuru.webp" alt="Chihayafuru Cover">
                                     </div>
                                 </div>
-                                <div class="col-auto pe-0 d-flex flex-column">
+                                </a><div class="col-auto pe-0 d-flex flex-column"><a data-bs-toggle="collapse" href="#query-confirm" aria-expanded="false" class="collapsed">
                                     <p class="my-0 fw-bold">{{Title}}</p>
                                     <p class="my-0 small">year <strong class="text-primary">|</strong> type</p>
                                     <p class="small">Eps: <strong class="text-primary">|</strong> Runtime:</p>
                                     <button class="btn btn-primary btn-sm mb-1 small">Start Watching</button>
-                                    <a class="btn btn-outline-primary btn-sm small" href="info.html">More</a>
+                                    </a><a class="btn btn-outline-primary btn-sm small" href="http://127.0.0.1:5500/templates/info.html">More</a>
                                 </div>
                             </div>
-                        </a>
+                        
                         <hr>
 
                         <!-- ITEM 2 -->
-                        <a data-bs-toggle="collapse" href="#query-confirm">
-                            <div class="row gap-0">
+                        <a data-bs-toggle="collapse" href="#query-confirm" aria-expanded="false" class="collapsed">
+                            </a><div class="row gap-0"><a data-bs-toggle="collapse" href="#query-confirm" aria-expanded="false" class="collapsed">
                                 <div class="col-3 px-0">
                                     <div class="img-container">
-                                        <img src="../images/Chihayafuru.webp" alt="Chihayafuru Cover">
+                                        <img src="Bellerin%20Mock_files/Chihayafuru.webp" alt="Chihayafuru Cover">
                                     </div>
                                 </div>
-                                <div class="col-auto pe-0 d-flex flex-column">
+                                </a><div class="col-auto pe-0 d-flex flex-column"><a data-bs-toggle="collapse" href="#query-confirm" aria-expanded="false" class="collapsed">
                                     <p class="my-0 fw-bold">{{Title}}</p>
                                     <p class="my-0 small">year <strong class="text-primary">|</strong> type</p>
                                     <p class="small">Eps: <strong class="text-primary">|</strong> Runtime:</p>
                                     <button class="btn btn-primary btn-sm mb-1 small">Start Watching</button>
-                                    <a class="btn btn-outline-primary btn-sm small" href="info.html">More</a>
+                                    </a><a class="btn btn-outline-primary btn-sm small" href="http://127.0.0.1:5500/templates/info.html">More</a>
                                 </div>
                             </div>
-                        </a>
+                        
                         <hr>
 
                         <!-- ITEM 3 -->
-                        <a data-bs-toggle="collapse" href="#query-confirm">
-                            <div class="row gap-0">
+                        <a data-bs-toggle="collapse" href="#query-confirm" aria-expanded="false" class="collapsed">
+                            </a><div class="row gap-0"><a data-bs-toggle="collapse" href="#query-confirm" aria-expanded="false" class="collapsed">
                                 <div class="col-3 px-0">
                                     <div class="img-container">
-                                        <img src="../images/Chihayafuru.webp" alt="Chihayafuru Cover">
+                                        <img src="Bellerin%20Mock_files/Chihayafuru.webp" alt="Chihayafuru Cover">
                                     </div>
                                 </div>
-                                <div class="col-auto pe-0 d-flex flex-column">
+                                </a><div class="col-auto pe-0 d-flex flex-column"><a data-bs-toggle="collapse" href="#query-confirm" aria-expanded="false" class="collapsed">
                                     <p class="my-0 fw-bold">{{Title}}</p>
                                     <p class="my-0 small">year <strong class="text-primary">|</strong> type</p>
                                     <p class="small">Eps: <strong class="text-primary">|</strong> Runtime:</p>
                                     <button class="btn btn-primary btn-sm mb-1 small">Start Watching</button>
-                                    <a class="btn btn-outline-primary btn-sm small" href="info.html">More</a>
+                                    </a><a class="btn btn-outline-primary btn-sm small" href="http://127.0.0.1:5500/templates/info.html">More</a>
                                 </div>
                             </div>
-                        </a>
+                        
                         <hr>
 
                         <!-- ITEM 4 -->
-                        <a data-bs-toggle="collapse" href="#query-confirm">
-                            <div class="row gap-0">
+                        <a data-bs-toggle="collapse" href="#query-confirm" aria-expanded="false" class="collapsed">
+                            </a><div class="row gap-0"><a data-bs-toggle="collapse" href="#query-confirm" aria-expanded="false" class="collapsed">
                                 <div class="col-3 px-0">
                                     <div class="img-container">
-                                        <img src="../images/Chihayafuru.webp" alt="Chihayafuru Cover">
+                                        <img src="Bellerin%20Mock_files/Chihayafuru.webp" alt="Chihayafuru Cover">
                                     </div>
                                 </div>
-                                <div class="col-auto pe-0 d-flex flex-column">
+                                </a><div class="col-auto pe-0 d-flex flex-column"><a data-bs-toggle="collapse" href="#query-confirm" aria-expanded="false" class="collapsed">
                                     <p class="my-0 fw-bold">{{Title}}</p>
                                     <p class="my-0 small">year <strong class="text-primary">|</strong> type</p>
                                     <p class="small">Eps: <strong class="text-primary">|</strong> Runtime:</p>
                                     <button class="btn btn-primary btn-sm mb-1 small">Start Watching</button>
-                                    <a class="btn btn-outline-primary btn-sm small" href="info.html">More</a>
+                                    </a><a class="btn btn-outline-primary btn-sm small" href="http://127.0.0.1:5500/templates/info.html">More</a>
                                 </div>
                             </div>
-                        </a>
+                        
                     </div>
 
                 </div>
@@ -485,17 +465,14 @@
         <div class="d-lg-none">
             <ul class="nav nav-pills nav-fill" role="tablist">
                 <!-- MY Tab -->
-                <li class="nav-item">
-                    <button id="myTab" class="nav-link active" data-bs-toggle="tab" data-bs-target="#myPage"
-                        type="button" role="tab" aria-controls="myPage" aria-selected="true" aria-labelledby="My Page">
+                <li class="nav-item" role="presentation">
+                    <button id="myTab" class="nav-link" data-bs-toggle="tab" data-bs-target="#myPage" type="button" role="tab" aria-controls="myPage" aria-selected="false" aria-labelledby="My Page" tabindex="-1">
                         MY
                     </button>
                 </li>
                 <!-- SEARCH Tab -->
-                <li class="nav-item">
-                    <button id="searchTab" class="nav-link" data-bs-toggle="tab" data-bs-target="#searchPage"
-                        type="button" role="tab" aria-controls="searchPage" aria-selected="false"
-                        aria-labelledby="Search Page">
+                <li class="nav-item" role="presentation">
+                    <button id="searchTab" class="nav-link active" data-bs-toggle="tab" data-bs-target="#searchPage" type="button" role="tab" aria-controls="searchPage" aria-selected="true" aria-labelledby="Search Page">
                         SEARCH
                     </button>
                 </li>
@@ -503,9 +480,46 @@
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+    <script src="Bellerin%20Mock_files/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
         </script>
-</body>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
 
-</html>
+
+</body></html>
