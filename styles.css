@@ -38,5 +38,10 @@
     text-overflow: ellipsis;
 }
 
+a {
+    text-decoration: none !important;
+    color: inherit !important;
+}
+
 /* shorthand flex: flex-grow, flew-shrink, flex-basis*/
     /* flex-basis (flex item size based on set width or height and if not its content */
